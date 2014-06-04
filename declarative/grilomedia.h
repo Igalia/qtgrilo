@@ -27,6 +27,7 @@
 #include <QObject>
 #include <grilo.h>
 #include <QUrl>
+#include <QVariant>
 
 class GriloMedia : public QObject {
   Q_OBJECT
@@ -63,13 +64,17 @@ public:
   int trackNumber() const;
   int childCount() const;
   QString mimeType() const;
+  QVariant data() const;
 
   GrlMedia *media();
   void setMedia(GrlMedia *media);
 
+  Q_INVOKABLE QVariant get(const QString& keyId) const;
   Q_INVOKABLE QString serialize();
 
 private:
+  QVariant convertValue(const GValue *value) const;
+
   GrlMedia *m_media;
 };
 
