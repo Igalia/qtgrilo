@@ -20,9 +20,11 @@
  */
 
 #include "grilobrowse.h"
-#include <QDebug>
+
 #include "griloregistry.h"
 #include "grilomedia.h"
+
+#include <QDebug>
 
 GriloBrowse::GriloBrowse(QObject *parent) :
   GriloDataSource(parent),

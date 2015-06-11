@@ -20,12 +20,13 @@
  */
 
 #include "grilodatasource.h"
+
 #include "grilomedia.h"
 #include "grilomodel.h"
 #include "griloregistry.h"
-#include <QDebug>
 
 #include <QTimerEvent>
+#include <QDebug>
 
 static void fill_key_id(gpointer data, gpointer user_data) {
   QVariantList *varList = static_cast<QVariantList *>(user_data);

@@ -20,8 +20,10 @@
  */
 
 #include "grilomultisearch.h"
-#include <QDebug>
+
 #include "griloregistry.h"
+
+#include <QDebug>
 
 GriloMultiSearch::GriloMultiSearch(QObject *parent) :
   GriloDataSource(parent) {

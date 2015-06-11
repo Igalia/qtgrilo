@@ -19,10 +19,11 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
+#include <GriloQt>
+
 #include "griloplugin.h"
 #include "declarativegrilomodel.h"
 
-#include <GriloQt>
 #include <GriloDataSource>
 #include <GriloBrowse>
 #include <GriloMedia>

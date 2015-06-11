@@ -20,8 +20,10 @@
  */
 
 #include "griloquery.h"
-#include <QDebug>
+
 #include "griloregistry.h"
+
+#include <QDebug>
 
 GriloQuery::GriloQuery(QObject *parent) :
   GriloDataSource(parent),

@@ -29,8 +29,6 @@
 #include <GriloQt>
 
 #include <QObject>
-#include <grilo.h>
-
 #include <QStringList>
 
 class GRILO_QT_EXPORT GriloRegistry : public QObject {

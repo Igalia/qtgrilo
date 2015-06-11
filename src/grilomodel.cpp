@@ -22,9 +22,11 @@
  */
 
 #include "grilomodel.h"
-#include <QDebug>
+
 #include "grilomedia.h"
 #include "grilodatasource.h"
+
+#include <QDebug>
 
 GriloModel::GriloModel(QObject *parent) :
   QAbstractListModel(parent),

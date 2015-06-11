@@ -22,6 +22,7 @@
  */
 
 #include "griloregistry.h"
+
 #include <QDebug>
 
 

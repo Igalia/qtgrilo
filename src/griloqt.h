@@ -25,6 +25,8 @@
 #ifndef GRILO_QT_H
 #define GRILO_QT_H
 
+#include <grilo.h>
+
 #if defined(GRILO_QT_LIBRARY)
 #  define GRILO_QT_EXPORT Q_DECL_EXPORT
 #else

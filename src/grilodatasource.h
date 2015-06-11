@@ -27,7 +27,6 @@
 #include <GriloQt>
 
 #include <QObject>
-#include <grilo.h>
 #include <QVariant>
 #include <QBasicTimer>
 
