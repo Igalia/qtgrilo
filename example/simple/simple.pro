@@ -2,7 +2,7 @@ include(../../common.pri)
 
 TEMPLATE = app
 TARGET = simple
-CONFIG += qt link_pkgconfig
+CONFIG += qt link_pkgconfig no_keywords
 
 equals(QT_MAJOR_VERSION, 5): QT += widgets
 

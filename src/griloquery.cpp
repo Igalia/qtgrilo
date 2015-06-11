@@ -73,9 +73,9 @@ QString GriloQuery::source() const {
 void GriloQuery::setSource(const QString& source) {
   if (m_source != source) {
     m_source = source;
-    emit sourceChanged();
-    emit slowKeysChanged();
-    emit supportedKeysChanged();
+    Q_EMIT sourceChanged();
+    Q_EMIT slowKeysChanged();
+    Q_EMIT supportedKeysChanged();
   }
 }
 
@@ -86,7 +86,7 @@ QString GriloQuery::query() const {
 void GriloQuery::setQuery(const QString& query) {
   if (m_query != query) {
     m_query = query;
-    emit queryChanged();
+    Q_EMIT queryChanged();
   }
 }
 
@@ -127,7 +127,7 @@ void GriloQuery::availableSourcesChanged() {
   if (m_available != available) {
     m_available = available;
 
-    emit availabilityChanged();
+    Q_EMIT availabilityChanged();
   }
 
   if (!m_available && m_opId) {

@@ -44,7 +44,7 @@ bool GriloMultiSearch::refresh() {
 
   GList *sources = NULL;
 
-  foreach (const QString& src, m_sources) {
+  Q_FOREACH (const QString& src, m_sources) {
     GrlSource *elem = m_registry->lookupSource(src);
     if (elem) {
       sources = g_list_append(sources, elem);
@@ -75,7 +75,7 @@ QStringList GriloMultiSearch::sources() const {
 void GriloMultiSearch::setSources(const QStringList& sources) {
   if (m_sources != sources) {
     m_sources = sources;
-    emit sourcesChanged();
+    Q_EMIT sourcesChanged();
   }
 }
 
@@ -86,6 +86,6 @@ QString GriloMultiSearch::text() const {
 void GriloMultiSearch::setText(const QString& text) {
   if (m_text != text) {
     m_text = text;
-    emit textChanged();
+    Q_EMIT textChanged();
   }
 }

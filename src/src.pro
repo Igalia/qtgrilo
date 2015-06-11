@@ -1,7 +1,7 @@
 include(../common.pri)
 
 TEMPLATE = lib
-CONFIG += qt link_pkgconfig
+CONFIG += qt link_pkgconfig no_keywords
 
 equals(QT_MAJOR_VERSION, 5): QT = core
 

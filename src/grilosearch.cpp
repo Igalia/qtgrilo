@@ -70,9 +70,9 @@ QString GriloSearch::source() const {
 void GriloSearch::setSource(const QString& source) {
   if (m_source != source) {
     m_source = source;
-    emit sourceChanged();
-    emit slowKeysChanged();
-    emit supportedKeysChanged();
+    Q_EMIT sourceChanged();
+    Q_EMIT slowKeysChanged();
+    Q_EMIT supportedKeysChanged();
   }
 }
 
@@ -83,7 +83,7 @@ QString GriloSearch::text() const {
 void GriloSearch::setText(const QString& text) {
   if (m_text != text) {
     m_text = text;
-    emit textChanged();
+    Q_EMIT textChanged();
   }
 }
 
@@ -124,7 +124,7 @@ void GriloSearch::availableSourcesChanged() {
   if (m_available != available) {
     m_available = available;
 
-    emit availabilityChanged();
+    Q_EMIT availabilityChanged();
   }
 
   if (!m_available && m_opId) {

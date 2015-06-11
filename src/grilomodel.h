@@ -61,7 +61,7 @@ public:
 
   int count() const;
 
-signals:
+Q_SIGNALS:
   void sourceChanged();
   void countChanged();
 

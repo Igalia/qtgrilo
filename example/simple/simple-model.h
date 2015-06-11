@@ -42,7 +42,7 @@ public:
 
     QVariant data(const QModelIndex& index, int role = Qt::DisplayRole) const;
 
-public slots:
+public Q_SLOTS:
     void onItemClicked(const QModelIndex& index);
 
 private:
